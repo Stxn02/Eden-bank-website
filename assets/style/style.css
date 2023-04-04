@@ -57,9 +57,24 @@ body::-webkit-scrollbar-thumb{
         background-repeat: no-repeat;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        position: relative;
     }
         .css-back2 h2{
-            colr
+            color: white;
+            position: absolute;
+            top: 45%;
+            left: 2.5%;
+            padding: 10px;
+            background-color: rgba(134, 134, 134, 0.41);
+        }
+        .css-back2 p{
+            color: white;
+            font-size: 17px;
+            position: absolute;
+            top: 60%;
+            left: 30%;
+            padding: 10px;
+            background-color: rgba(134, 134, 134, 0.41);
         }
     .css-pagehead{
         flex: 1;
