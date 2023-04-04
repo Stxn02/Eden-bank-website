@@ -8,7 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>TEST AGAIN</h1>
+    <div class="css-back1"></div>
+    <div class="col page">
+        <div class="css-cont1 row">
+            <div class="css-back2">
+                <h2>Time to start saving peacefully</h2>
+                <p>In a user friendly enviroment</p>
+            </div>
+            <div class="css-pagehead">
+                <h2>Welcome to the Eden</h2>
+                <p>Manage your savings with us!</p>
+                <a href="https://github.com/Stxn02/Eden-bank-website" target="_blank">Visit our GitHub</a>
+            </div>
+        </div>
+    </div>
     <script src="./assets/script/script.js"></script>
 </body>
 </html>

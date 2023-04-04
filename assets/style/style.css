@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-color: white;
+}
+body::-webkit-scrollbar{
+    transition: all ease 0.25s;
+    width: 8.5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #a58484;
+    transition: all ease 0.25s;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background: linear-gradient(0deg,#2ffea4, #40a9ffad);
+    transition: all ease 0.25s;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col.page{
+    height: 1000px;
+}
+
+.css-back1{
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    background-image: url("../pics/pic1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(5px);
+}
+.css-cont1{
+    width: 60%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+    .css-back2{
+        flex: 2;
+        height: 100%;
+        background-image: url("../pics/pic1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+        .css-back2 h2{
+            colr
+        }
+    .css-pagehead{
+        flex: 1;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgb(242, 242, 242);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .css-pagehead h2{
+            color: black;
+            font-size: 25px;
+        }
+        .css-pagehead a{
+            margin-top: 10%;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            padding: 15px;
+            background-color: rgb(124, 30, 124);
+            border-radius: 10px;
+            transition: all ease 0.40s;
+        }
+        .css-pagehead a:hover{
+            transition: all ease 0.40s;
+            background-color: rgb(63, 30, 124);
+            text-decoration: underline;
+        }
