@@ -3,14 +3,14 @@
     margin: 0;
 }
 html{
-    background-color: white;
+    background-color: rgb(19, 0, 42);
 }
 body::-webkit-scrollbar{
     transition: all ease 0.25s;
     width: 8.5px;
 }
 body::-webkit-scrollbar-track{
-    background-color: #a58484;
+    background-color: rgb(19, 0, 42);
     transition: all ease 0.25s;
 }
 body::-webkit-scrollbar-thumb{
@@ -59,37 +59,44 @@ body::-webkit-scrollbar-thumb{
         border-bottom-left-radius: 20px;
         position: relative;
     }
-        .css-back2 h2{
+        .css-back2 h2, .css-back2 p{
             color: white;
             position: absolute;
+            padding: 15px;
+            backdrop-filter: blur(5px);
+        }
+        .css-back2 h2{
+            font-size: 23px;
             top: 45%;
             left: 2.5%;
             padding: 10px;
-            background-color: rgba(134, 134, 134, 0.41);
+            background: linear-gradient(90deg, rgba(74, 118, 219, 0.442), rgba(34, 156, 186, 0.218));
         }
         .css-back2 p{
-            color: white;
             font-size: 17px;
-            position: absolute;
             top: 60%;
             left: 30%;
-            padding: 10px;
-            background-color: rgba(134, 134, 134, 0.41);
+            background: linear-gradient(90deg, rgba(74, 219, 202, 0.442), rgba(34, 156, 186, 0.218));
         }
     .css-pagehead{
         flex: 1;
         height: 100%;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        background-color: rgb(242, 242, 242);
+        background: linear-gradient(23deg, rgb(10, 4, 84), rgb(91, 4, 103));
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+        .css-pagehead h2, .css-pagehead p{
+            color: white;
+        }
         .css-pagehead h2{
-            color: black;
             font-size: 25px;
+        }
+        .css-pagehead p{
+            font-size: 17px;
         }
         .css-pagehead a{
             margin-top: 10%;
@@ -102,6 +109,7 @@ body::-webkit-scrollbar-thumb{
             transition: all ease 0.40s;
         }
         .css-pagehead a:hover{
+            opacity: 0.8;
             transition: all ease 0.40s;
             background-color: rgb(63, 30, 124);
             text-decoration: underline;
