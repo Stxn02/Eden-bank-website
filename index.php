@@ -53,7 +53,7 @@
             <h2>Wireframe</h2>
             <img class="css-deco" src="./assets/pics/pic10.png" alt="Wireframe pic">
             <a href="./assets/pdf/wireframe.pdf" target="_blank" download="">
-                <img src="./assets/logos/download.svg" alt="Download" title="Download Wireframe">
+                <img src="./assets/logos/download.svg" alt="Download" title="Download wireframe">
             </a>
         </div>
         <div class="css-cont4 js-cont4 row">
