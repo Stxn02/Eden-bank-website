@@ -52,6 +52,9 @@
             </div>
             <h2>Wireframe</h2>
             <img class="css-deco" src="./assets/pics/pic10.png" alt="Wireframe pic">
+            <a href="./assets/pdf/wireframe.pdf" target="_blank" download="">
+                <img src="./assets/logos/download.svg" alt="Download" title="Download Wireframe">
+            </a>
         </div>
         <div class="css-cont4 js-cont4 row">
             <div class="css-details">
@@ -59,6 +62,9 @@
             </div>
             <h2>ERD diagram</h2>
             <img class="css-deco" src="./assets/pics/pic11.png" alt="ERD diagram pic">
+            <a href="./assets/pdf/erd_diagram.pdf" target="_blank" download="">
+                <img src="./assets/logos/download.svg" alt="Download" title="Downloda ERD diagram">
+            </a>
         </div>
     </div>
     <script src="./assets/script/script.js"></script>

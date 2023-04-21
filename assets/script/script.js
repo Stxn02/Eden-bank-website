@@ -15,9 +15,9 @@ window.onscroll = function(){
     cont3.style.opacity = `${opacity_c3}`;
     cont4.style.opacity = `${opacity_c4}`;
 
-    trigger_move(cont2, xmove_c2);
-    trigger_move(cont3, xmove_c3);
-    trigger_move(cont4, xmove_c4);
+    trigger_move(cont2, xmove_c2, "left");
+    trigger_move(cont3, xmove_c3, "right");
+    trigger_move(cont4, xmove_c4, "left");
 }
 
 
@@ -56,10 +56,18 @@ function resetopacity($value){
     }
     return $value;
 }
-function trigger_move($el, $xmove){
-    if (getPercentageVisible($el) <= 10){
-        $el.style.transform = `translateX(-100%)`;
+function trigger_move($el, $xmove, $from){
+    if ($from == "left"){
+        if (getPercentageVisible($el) <= 50){
+            $el.style.transform = `translateX(-100%)`;
+        } else {
+            $el.style.transform = `translateX(${$xmove}%)`;
+        }
     } else {
-        $el.style.transform = `translateX(${$xmove}%)`;
+        if (getPercentageVisible($el) <= 50){
+            $el.style.transform = `translateX(100%)`;
+        } else {
+            $el.style.transform = `translateX(${$xmove}%)`;
+        }
     }
 }

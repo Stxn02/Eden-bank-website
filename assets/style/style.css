@@ -83,22 +83,10 @@ body::-webkit-scrollbar-thumb{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* .css-deco{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+img, a, h1, h2{
+    user-select: none;
+    -webkit-user-drag: none;
 }
-.css-deco div{
-    width: 90%;
-    height: 100%;
-    background-color: white;
-} */
 
 .css-back1{
     position: absolute;
@@ -166,6 +154,8 @@ body::-webkit-scrollbar-thumb{
                 font-size: 15px;
                 top: 60%;
                 background-color: rgba(255, 255, 255, 0.2);
+                user-select: none;
+                -webkit-user-drag: none;
             }
         .css-pagehead{
             flex: 1;
@@ -196,6 +186,8 @@ body::-webkit-scrollbar-thumb{
                         font-size: 14px;
                         font-family: font_3;
                         color: #2e2e2e;
+                        user-select: none;
+                        -webkit-user-drag: none;
                     }
             .css-pagehead a{
                 margin-top: 10%;
@@ -231,6 +223,10 @@ body::-webkit-scrollbar-thumb{
     margin-right: auto;
     border-right: 1px solid white;
 }
+    .css-cont2 a, .css-cont4 a{
+        top: 0;
+        right: 20px;
+    }
     .css-cont2 .css-deco{
         position: absolute;
         right: 0;
@@ -288,13 +284,27 @@ body::-webkit-scrollbar-thumb{
         color: white;
         font-size: 50px;
         text-align: center;
-        backdrop-filter: blur(2px);
+    }
+    .css-cont2 a, .css-cont3 a, .css-cont4 a{
+        position: absolute;
+        filter: invert();
+        width: 30px;
+        opacity: 0.6;
+        transition: all ease .5s;
+    }
+    .css-cont2 a:hover, .css-cont3 a:hover, .css-cont4 a:hover{
+        opacity: 1;
+        transition: all ease .5s;
     }
 .css-cont3{
     margin-left: auto;
     border-left: 1px solid white;
-    transform: translateX(100%);
+    transform: translateX(-100%);
 }
+    .css-cont3 a{
+        top: 0;
+        left: 20px;
+    }
     .css-cont3 .css-deco{
         position: absolute;
         left: 0;
@@ -312,6 +322,8 @@ body::-webkit-scrollbar-thumb{
     }
     .css-cont3 img{
         width: 100%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
     }
 .css-cont4{
     height: auto;
@@ -336,4 +348,6 @@ body::-webkit-scrollbar-thumb{
     }
     .css-cont4 img{
         width: 100%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
