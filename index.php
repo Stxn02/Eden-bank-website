@@ -73,7 +73,7 @@
             <h2>Class diagram</h2>
             <img class="css-deco" src="./assets/pics/pic9.png" alt="Wireframe pic">
             <a href="./assets/pdf/class_diagram.pdf" target="_blank" download="">
-                <img src="./assets/logos/download.svg" alt="Download" title="Download Wireframe">
+                <img src="./assets/logos/download.svg" alt="Download" title="Download class diagram">
             </a>
         </div>
        
