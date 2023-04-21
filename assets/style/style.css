@@ -207,7 +207,7 @@ img, a, h1, h2{
                 text-decoration: underline;
             }
 
-.css-cont2, .css-cont3, .css-cont4{
+.css-cont2, .css-cont3, .css-cont4, .css-cont5{
     flex: none;
     width: 95%;
     height: auto;
@@ -276,7 +276,7 @@ img, a, h1, h2{
                     width: 70%;
                     text-align: justify;
                 }
-    .css-cont2 h2, .css-cont3 h2, .css-cont4 h2{
+    .css-cont2 h2, .css-cont3 h2, .css-cont4 h2, .css-cont5 h2{
         flex: 1;
         font-family: font_7;
         font-weight: 400;
@@ -285,14 +285,14 @@ img, a, h1, h2{
         font-size: 50px;
         text-align: center;
     }
-    .css-cont2 a, .css-cont3 a, .css-cont4 a{
+    .css-cont2 a, .css-cont3 a, .css-cont4 a, .css-cont5 a{
         position: absolute;
         filter: invert();
         width: 30px;
         opacity: 0.6;
         transition: all ease .5s;
     }
-    .css-cont2 a:hover, .css-cont3 a:hover, .css-cont4 a:hover{
+    .css-cont2 a:hover, .css-cont3 a:hover, .css-cont4 a:hover, .css-cont5 a:hover{
         opacity: 1;
         transition: all ease .5s;
     }
@@ -350,4 +350,34 @@ img, a, h1, h2{
         width: 100%;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
+    }
+.css-cont5{
+    margin-left: auto;
+    border-left: 1px solid white;
+    transform: translateX(-100%);
+}
+    .css-cont5 a{
+        top: 0;
+        left: 20px;
+    }
+    .css-cont5 .css-deco{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 35%;
+        opacity: 0.6;
+        z-index: -1;
+        filter: blur(3px);
+    }
+    .css-cont5 .css-details{
+        flex: 1.5;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .css-cont5 img{
+        width: 100%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        max-height: 90vh;
     }

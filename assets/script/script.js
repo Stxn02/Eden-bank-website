@@ -1,23 +1,28 @@
 var cont2 = document.querySelector(".js-cont2");
 var cont3 = document.querySelector(".js-cont3");
 var cont4 = document.querySelector(".js-cont4");
+var cont5 = document.querySelector(".js-cont5");
 
 window.onscroll = function(){
     var opacity_c2 = resetopacity(getPercentageVisible(cont2) / 100);
     var opacity_c3 = resetopacity(getPercentageVisible(cont3) / 100);
     var opacity_c4 = resetopacity(getPercentageVisible(cont4) / 100);
+    var opacity_c5 = resetopacity(getPercentageVisible(cont5) / 100);
 
     var xmove_c2 = resetmove(getPercentageVisible(cont2), "right");
     var xmove_c3 = resetmove(getPercentageVisible(cont3)*-1, "left");
     var xmove_c4 = resetmove(getPercentageVisible(cont4), "right");
+    var xmove_c5 = resetmove(getPercentageVisible(cont5)*-1, "left");
 
     cont2.style.opacity = `${opacity_c2}`;
     cont3.style.opacity = `${opacity_c3}`;
     cont4.style.opacity = `${opacity_c4}`;
+    cont5.style.opacity = `${opacity_c5}`;
 
     trigger_move(cont2, xmove_c2, "left");
     trigger_move(cont3, xmove_c3, "right");
     trigger_move(cont4, xmove_c4, "left");
+    trigger_move(cont5, xmove_c5, "right");
 }
 
 
