@@ -1,21 +1,58 @@
+@font-face {
+    font-family: font_1;
+    src: url("../fonts/AlongSanss2-Regular.otf");
+}
+@font-face {
+    font-family: font_2;
+    src: url("../fonts/HANSON\ HAIRLINE.otf");
+}
+@font-face {
+    font-family: font_3;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: font_4;
+    src: url("../fonts/Zefani_Uppercase_Demo-Regular.otf");
+}
+@font-face {
+    font-family: font_5;
+    src: url("../fonts/Zanna\ -\ Regular\ Personal\ Use.otf");
+}
+@font-face {
+    font-family: font_6;
+    src: url("../fonts/Audrey-Normal.otf");
+}
+@font-face {
+    font-family: font_7;
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+
+
+
+
 *{
     padding: 0;
     margin: 0;
 }
 html{
-    background-color: rgb(19, 0, 42);
+    background-color: rgb(14, 4, 34);
+}
+body{
+    position: relative;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar{
     transition: all ease 0.25s;
-    width: 8.5px;
+    width: 7.5px;
 }
 body::-webkit-scrollbar-track{
-    background-color: rgb(19, 0, 42);
+    background-color: rgb(14, 4, 34);
     transition: all ease 0.25s;
 }
 body::-webkit-scrollbar-thumb{
     border-radius: 15px;
-    background: linear-gradient(0deg,#2ffea4, #40a9ffad);
+    background-color: #723b90;
     transition: all ease 0.25s;
 }
 
@@ -27,9 +64,41 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     flex-direction: row;
 }
-.col.page{
-    height: 1000px;
+.row_rev{
+    display: flex;
+    flex-direction: row-reverse;
 }
+.col.page{
+    height: auto;
+    row-gap: 150px;
+    padding-bottom: 100px;
+}
+#evelien{
+    background-image: url("../pics/pic4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#stan{
+    background-image: url("../pics/pic5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .css-deco{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.css-deco div{
+    width: 90%;
+    height: 100%;
+    background-color: white;
+} */
 
 .css-back1{
     position: absolute;
@@ -39,78 +108,232 @@ body::-webkit-scrollbar-thumb{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 1;
     filter: blur(5px);
 }
 .css-cont1{
-    width: 60%;
+    flex: none;
+    width: 80%;
     height: 60vh;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     margin-top: 5%;
+    z-index: 1;
 }
-    .css-back2{
-        flex: 2;
-        height: 100%;
-        background-image: url("../pics/pic1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        position: relative;
-    }
-        .css-back2 h2, .css-back2 p{
-            color: white;
-            position: absolute;
-            padding: 15px;
-            backdrop-filter: blur(5px);
-        }
-        .css-back2 h2{
-            font-size: 23px;
-            top: 45%;
-            left: 2.5%;
-            padding: 10px;
-            background: linear-gradient(90deg, rgba(74, 118, 219, 0.442), rgba(34, 156, 186, 0.218));
-        }
-        .css-back2 p{
-            font-size: 17px;
-            top: 60%;
-            left: 30%;
-            background: linear-gradient(90deg, rgba(74, 219, 202, 0.442), rgba(34, 156, 186, 0.218));
-        }
-    .css-pagehead{
+    .css-head1{
         flex: 1;
-        height: 100%;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        background: linear-gradient(23deg, rgb(10, 4, 84), rgb(91, 4, 103));
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        /* background-color: red; */
     }
-        .css-pagehead h2, .css-pagehead p{
-            color: white;
+        .css-head1 img{
+            width: 90%;
+            padding: 30px;
+            /* backdrop-filter: blur(5px); */
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.597), transparent);
         }
-        .css-pagehead h2{
-            font-size: 25px;
+    .css-head2{
+        flex: 1.5;
+    }
+        .css-back2{
+            flex: 2;
+            height: 100%;
+            background-image: url("../pics/pic1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            position: relative;
         }
-        .css-pagehead p{
-            font-size: 17px;
+            .css-back2 h2, .css-back2 p{
+                color: white;
+                font-family: font_3;
+                font-weight: 300;
+                position: absolute;
+                padding: 15px;
+                backdrop-filter: blur(5px);
+            }
+            .css-back2 h2{
+                font-size: 20px;
+                top: 45%;
+                padding: 10px;
+                padding-left: 25px;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            .css-back2 p{
+                font-size: 15px;
+                top: 60%;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        .css-pagehead{
+            flex: 1;
+            height: 100%;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background: linear-gradient(193deg, wheat, white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        .css-pagehead a{
-            margin-top: 10%;
-            text-decoration: none;
-            font-size: 20px;
-            color: white;
+            .css-pagehead h2, .css-pagehead p{
+                color: white;
+            }
+                .css-pagehead span{
+                    align-items: center;
+                    justify-content: center;
+                    backdrop-filter: blur(10px);
+                    padding: 5px;
+                }
+                    .css-pagehead h2{
+                        font-size: 22px;
+                        font-family: font_5;
+                        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+                    }
+                    .css-pagehead p{
+                        font-size: 14px;
+                        font-family: font_3;
+                        color: #2e2e2e;
+                    }
+            .css-pagehead a{
+                margin-top: 10%;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: font_7;
+                color: white;
+                padding: 15px;
+                background-color: rgb(124, 30, 124);
+                border-radius: 10px;
+                transition: all ease 0.40s;
+            }
+            .css-pagehead a:hover{
+                opacity: 0.8;
+                transition: all ease 0.40s;
+                background-color: rgb(63, 30, 124);
+                text-decoration: underline;
+            }
+
+.css-cont2, .css-cont3, .css-cont4{
+    flex: none;
+    width: 95%;
+    height: auto;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    transition: all ease 1.5s;
+}
+.css-cont2{
+    transform: translateX(-100%);
+    margin-right: auto;
+    border-right: 1px solid white;
+}
+    .css-cont2 .css-deco{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 70%;
+        opacity: 0.6;
+        z-index: -1;
+        filter: blur(3px);
+    }
+    .css-cont2 .right{
+        padding-left: 7.5%;
+    }
+    .css-cont2 .css-details{
+        flex: 1.5;
+        height: 100%;
+        row-gap: 20px;
+    }
+        .css-details span{
+            width: 100%;
+            column-gap: 10px;
             padding: 15px;
-            background-color: rgb(124, 30, 124);
-            border-radius: 10px;
-            transition: all ease 0.40s;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.401);
         }
-        .css-pagehead a:hover{
-            opacity: 0.8;
-            transition: all ease 0.40s;
-            background-color: rgb(63, 30, 124);
-            text-decoration: underline;
-        }
+            .css-cont2 span div#evelien, .css-cont2 span div#stan {
+                width: 230px;
+                height: 230px;
+                border-radius: 50%;
+            }
+            .css-cont2 span div.css-text{
+                height: auto;
+                width: 70%;
+                background-color: wheat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                overflow-y: auto;
+            }
+                .css-cont2 span div p{
+                    font-family: font_3;
+                    font-weight: 300;
+                    color: #2e2e2e;
+                    font-size: 18px;
+                    padding: 10px;
+                    height: auto;
+                    width: 70%;
+                    text-align: justify;
+                }
+    .css-cont2 h2, .css-cont3 h2, .css-cont4 h2{
+        flex: 1;
+        font-family: font_7;
+        font-weight: 400;
+        color: rgb(198, 47, 47);
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        backdrop-filter: blur(2px);
+    }
+.css-cont3{
+    margin-left: auto;
+    border-left: 1px solid white;
+    transform: translateX(100%);
+}
+    .css-cont3 .css-deco{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 35%;
+        opacity: 0.6;
+        z-index: -1;
+        filter: blur(3px);
+    }
+    .css-cont3 .css-details{
+        flex: 1.5;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .css-cont3 img{
+        width: 100%;
+    }
+.css-cont4{
+    height: auto;
+    margin-right: auto;
+    border-right: 1px solid white;
+    transform: translateX(-100%);
+}
+    .css-cont4 .css-deco{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 35%;
+        opacity: 0.6;
+        z-index: -1;
+        filter: blur(3px);
+    }
+    .css-cont4 .css-details{
+        flex: 1.5;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .css-cont4 img{
+        width: 100%;
+    }
