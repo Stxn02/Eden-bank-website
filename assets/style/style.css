@@ -216,7 +216,7 @@ img, a, h1, h2{
     justify-content: center;
     position: relative;
     opacity: 0;
-    transition: all ease 1.5s;
+    transition: all ease 1.65s;
 }
 .css-cont2{
     transform: translateX(-100%);
