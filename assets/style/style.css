@@ -350,6 +350,7 @@ img, a, h1, h2{
         width: 100%;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
+        filter: invert() hue-rotate(150deg);
     }
 .css-cont5{
     margin-left: auto;
