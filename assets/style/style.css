@@ -343,11 +343,12 @@ img, a, h1, h2{
     .css-cont4 .css-details{
         flex: 1.5;
         height: auto;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
-    .css-cont4 img{
-        width: 100%;
+    .css-cont4 img#erd{
+        width: 75%;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
         filter: invert() hue-rotate(150deg);

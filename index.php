@@ -58,7 +58,7 @@
         </div>
         <div class="css-cont4 js-cont4 row">
             <div class="css-details">
-                <img src="./assets/pics/pic12.png" alt="Erd diagram">
+                <img id="erd" src="./assets/pics/pic12.png" alt="Erd diagram">
             </div>
             <h2>ERD diagram</h2>
             <img class="css-deco" src="./assets/pics/pic11.png" alt="ERD diagram pic">
